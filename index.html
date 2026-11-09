@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mijn Financieel Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+<h1>💰 Mijn Financieel Dashboard</h1>
+
+<div class="grid">
+
+<div class="card">
+<h3>Saldo</h3>
+<p id="saldo">€0</p>
+</div>
+
+<div class="card">
+<h3>Inkomsten</h3>
+<p id="inkomsten">€0</p>
+</div>
+
+<div class="card">
+<h3>Uitgaven</h3>
+<p id="uitgaven">€0</p>
+</div>
+
+<div class="card">
+<h3>Spaardoel</h3>
+<p id="spaardoel">€10.000</p>
+</div>
+
+</div>
+
+<div class="formulier">
+
+<input id="omschrijving" placeholder="Omschrijving">
+
+<input id="bedrag" type="number" placeholder="Bedrag">
+
+<select id="type">
+<option value="inkomst">Inkomst</option>
+<option value="uitgave">Uitgave</option>
+</select>
+
+<button onclick="voegToe()">
+Toevoegen
+</button>
+
+</div>
+
+<div class="chart-container">
+<canvas id="finChart"></canvas>
+</div>
+
+<h2>Transacties</h2>
+
+<ul id="transacties"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
